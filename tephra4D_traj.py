@@ -293,12 +293,12 @@ def traj(erno):
             print([d, en - st, len(sheet)])
         if len(sheet) > 10000:
             sheet.to_csv(
-                dir1 + str(erno) + "/traj" + str(erno) + "/" + str(int(d * 1000)) + "mms-1_nonrand.csv", index=None)
+                dir1 + str(erno) + "/traj" + str(erno) + "/" + str(int(d * 1000)) + "mms-1.csv", index=None)
             sheet = pd.DataFrame(
                 columns=["d", "h", "x0", "y0", "z0", "t0", "x0n", "y0n", "z0n", "t0n", "u", "v", "w", "xt", "yt", "zt"])
         elif d == shokichi.index[-1]:
             sheet.to_csv(
-                dir1 + str(erno) + "/traj" + str(erno) + "/" + str(int(d * 1000)) + "mms-1_nonrand.csv", index=None)
+                dir1 + str(erno) + "/traj" + str(erno) + "/" + str(int(d * 1000)) + "mms-1.csv", index=None)
 
 
 for event in table_det.index:
