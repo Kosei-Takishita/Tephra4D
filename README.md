@@ -13,7 +13,7 @@ The set of the source code consists of the following 4 files:
       Function “rise” calculates the trajectory during the ascent, i.e. the trailing of the plume.
       Function “traj” calculates the trajectory from the segregation of the plume from the position calculated by “rise” until it lands on the ground. The default set of settling velocity is based on the classification of our disdrometer, and each diameter is calculated from equations 15 and 16 in the paper. We also give a set of segregation heights that equally divide the plume into columns. The trajectories are calculated for each combination of particle size and segregation height. The result is a line by line output of the spatio-temporal coordinates of the particle per step, its velocity, the index of the box it is in, and the time it takes to move to the adjacent box. If the particle returns to the same box as the one it was in two steps before, the velocity component in the direction it went to is set to zero, and the velocity components in other directions are averaged. If the number of lines exceeds 10,000, we save it to a csv file and reset the output DataFrame.
     tephra4D_sites.py
-      This is a code to calculate the distribution of ash fall for each observation site. It is under preparation for upload.
+      This is a code to calculate the distribution of ash fall for each observation site.
     tephra4D_cross.py
       This is a code to calculate the distribution of ash fall for each grid point. It is under preparation for upload.
     
@@ -36,7 +36,7 @@ Tephra2を修正して作られた移流拡散モデルTephra4Dです。この�
       関数riseでは上昇時の座標移動，すなわち噴煙のなびきを計算します。
       関数trajではriseで計算された噴煙の位置から分離して地表に着地するまでを計算します。shokichiというDataFrameのindexに，落下速度区間を代表する粒径セットをφスケールで与えます。デフォルトに与える落下速度は私達が使用するディスドロメータの落下速度区間に準じていて，論文内の15,16式から計算したものです。また，columnsに噴煙を等分するような分離高度セットを与えます。粒径，分離高度の組み合わせごとに流跡線を計算します。結果は1ステップごとの粒子の時空間座標と移動速度，存在する箱のインデックス，隣接する箱に移動するまでにかかる時間を1行ごとに出力します。計算負荷を考えて，粒子が2ステップ前の箱と同じ箱に戻った場合には，2ステップ前の箱と1ステップ前の箱を合わせて1つの箱と見立てて，行き来した方向の速度成分を0に，その他の方向の速度成分は平均を取って計算します。1万行を超えるとcsvファイルに保存して出力DataFrameをリセットするようにしています。
     tephra4D_sites.py
-    観測地点ごとの降灰量分布を計算するコードです。アップロード準備中です。
+    観測地点ごとの降灰量分布を計算するコードです。
     tephra4D_cross.py
     格子点ごとの降灰量分布を計算するコードです。アップロード準備中です。
 
