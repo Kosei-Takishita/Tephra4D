@@ -1,5 +1,3 @@
-# 2021_TSP/220909_cal-TSP.pyも参照のこと
-
 import pandas as pd
 import numpy as np
 import glob
