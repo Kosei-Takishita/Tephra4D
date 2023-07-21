@@ -20,6 +20,12 @@ Function “traj” calculates the trajectory from the segregation of the plume 
 
 [4] tephra4D_cross.py
     This is a code to calculate the distribution of ash fall for each grid point. It is under preparation for upload.
+
+[5] traj-rise_WT4D.py
+    This is a code of a bending plume model PlumeRise in Python (Woodhouse, M.J., A.J. Hogg, J.C. Phillips, and R.S.J. Sparks (2013), Interaction between volcanic plumes and wind during the 2010 Eyjafjallajökull eruption, Iceland, Journal of Geophysical Research: Solid Earth 118, 92–109; https://doi.org/10.1029/2012JB009592). 
+Their original UI is available here: https://www.plumerise.bris.ac.uk/ 
+This plume model is also implemented in WT (Mannen et al., 2020; https://doi.org/10.1029/2019JB018902). The combination of "wh13_class" in this code and Tephra2_PY is equivalent to WT.
+To combine "wh13_class" in this code with "traj" in tephra4D_traj.py (i. e. replace "rise" in tephra4D_traj.py with "wh13_class" in this code), you can both consider plume bending based on PlumeRise and the horisontal heterogeneity of wind field.
     
 The input data such as ejecta, eruption start time, plume height(h_p) of each eruption, topography, and wind data has been replaced by dummy data of the same shape, so you will have to get it from elsewhere and substitute it. 
 You can get the topography data around Sakurajima and other Japanese volcanoes from the following GSI website (Japanese): https://fgd.gsi.go.jp/download/menu.php 
