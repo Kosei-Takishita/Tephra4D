@@ -24,7 +24,7 @@ Function “traj” calculates the trajectory from the segregation of the plume 
 The input data such as ejecta, eruption start time, plume height(h_p) of each eruption, topography, and wind data has been replaced by dummy data of the same shape, so you will have to get it from elsewhere and substitute it. 
 You can get the topography data around Sakurajima and other Japanese volcanoes from the following GSI website (Japanese): https://fgd.gsi.go.jp/download/menu.php 
 You can get some data related to Sakurajima eruption from the following JMA website (Japanese): http://www.jma-net.go.jp/kagoshima/vol/kazan_top.html 
-If you have trouble calculating using this code, you want the upload to be rushed, or you have a question related to the code, please e-mail to the following address: takishita.kosei.85s@st.kyoto-u.ac.jp
+If you have trouble calculating using this code, you want the upload to be rushed, or you have a question related to the code, please e-mail to the following address: takishita@bosai.go.jp
 
 Tephra2を修正して作られた移流拡散モデルTephra4Dです。このモデルの原理は以下の論文で説明されています：
     Takishita, K., Poulidis, A.P., Iguchi, M., 2021. Tephra4D: A python-based model for high-resolution tephra transport and deposition simulations— applications at Sakurajima volcano, Japan. Atmosphere (Basel). 12. https://doi.org/10.3390/atmos12030331
@@ -52,4 +52,4 @@ Tephra2を修正して作られた移流拡散モデルTephra4Dです。この�
 桜島や他の日本の火山周辺の地形データは以下の国土地理院のサイトから取得できます： https://fgd.gsi.go.jp/download/menu.php
 桜島の噴火に関する情報は以下の鹿児島地方気象台のサイトから取得できます： http://www.jma-net.go.jp/kagoshima/vol/kazan_top.html 
 もしこのコードを用いて計算する際に問題が生じた場合や，アップロードを急いでほしい場合，このコードに関連した質問がある場合は，以下のメールアドレスにメールしてください：
-takishita.kosei.85s@st.kyoto-u.ac.jp
+takishita@bosai.go.jp
